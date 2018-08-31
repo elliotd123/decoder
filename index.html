@@ -11,15 +11,15 @@
     <body>
             <div class="input-group mb-3 input-group-lg">
                 <div class="input-group-prepend">
-                        <button class="btn btn-primary" type="button" onclick="encode()">Encode</button>
+                    <span class="input-group-text">Plain</span>
                 </div>
-                <textarea class="form-control" id="cleartext" aria-label="With textarea"></textarea>
+                <textarea class="form-control" id="cleartext" aria-label="With textarea" onkeyup="encode()"></textarea>
             </div>
             <div class="input-group mb-3 input-group-lg">
                 <div class="input-group-prepend">
-                        <button class="btn btn-primary" type="button" onclick="decode()">Decode</button>
+                    <span class="input-group-text">Encoded</span>
                 </div>
-                <textarea class="form-control" id="cipher" aria-label="With textarea"></textarea>
+                <textarea class="form-control" id="cipher" aria-label="With textarea" onkeyup="decode()"></textarea>
             </div>
     </body>
 </html>
