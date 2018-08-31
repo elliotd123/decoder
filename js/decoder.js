@@ -1,5 +1,5 @@
-var orig_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 1234567890"
-var key = "TYaygL4p21XWI7r9blDUiG5 sOAqKxBRCEScHMNwVjdn0u3fvF6zhkJQtZem8Po"
+var orig_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+var key = "TYaygL4p21XWI7r9blDUiG5sOAqKxBRCEScHMNwVjdn0u3fvF6zhkJQtZem8Po"
 
 function decode() {
     var input = $("#cipher").val();
