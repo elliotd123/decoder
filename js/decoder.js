@@ -1,11 +1,11 @@
-var orig_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
-var key = "TYaygL4p21XWI7r9blDUiG5sOAqKxBRCEScHMNwVjdn0u3fvF6zhkJQtZem8Po"
+var orig_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+var key = "TYaygL4p21XWI7r9blDUiG5sOAqKxBRCEScHMNwVjdn0u3fvF6zhkJQtZem8Po";
 
 function decode() {
     var input = $("#cipher").val();
     var res = "";
     for (i = 0; i < input.length; i++) {
-        var char = ""
+        var char = "";
         char_loc = key.indexOf(input.charAt(i));
         console.log(char_loc);
         if (char_loc == -1) {
@@ -23,7 +23,7 @@ function encode() {
     var input = $("#cleartext").val();
     var res = "";
     for (i = 0; i < input.length; i++) {
-        var char = ""
+        var char = "";
         char_loc = orig_chars.indexOf(input.charAt(i));
         console.log(char_loc);
         if (char_loc == -1) {
